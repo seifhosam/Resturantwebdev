@@ -4,9 +4,9 @@
     <div class="fixed-header">
         <div class="container">
             <nav>
-                <a href="Home.php">Home</a>
-                <a href="About.php">About</a>
-                <a href="Beef.php">Menu</a>
+                <a href="#">Home</a>
+                <a href="">About</a>
+                <a href="#">Menu</a>
                 <a href="contact_us.php">Contact Us</a>
             </nav>
         </div>
