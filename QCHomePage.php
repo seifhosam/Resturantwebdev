@@ -15,8 +15,10 @@ session_start();
 
 </body>
 <style>
+
 h1{
 	color:red;
 }
+
 </style>
 </html>
