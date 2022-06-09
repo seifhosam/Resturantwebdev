@@ -1,0 +1,41 @@
+.name{
+    color:rgb(196, 196, 196);
+}
+
+.grid
+ {
+display: grid;
+padding: 2em;
+grid-template-columns: repeat(2, 1fr);
+gap: 1.5em;
+padding:1.5em 0;
+}
+.item{
+    display: flex;
+    padding-left: 20px;
+}
+.menu-item-text{
+    flex: 1;
+}
+.btn2{
+    flex-grow: 1;
+}
+h3 .hc{
+color:aliceblue;
+}
+.img2
+{
+    width: 140px;
+    height: 100px;
+    margin-right: 2em;
+}
+.menu-item-heading{
+color:white ;
+}
+
+.h20{
+    color:aliceblue;
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
