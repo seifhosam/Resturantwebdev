@@ -6,8 +6,9 @@ include "header.php";
             <meta charset="utf-8">
             <title>Home</title>
             <link rel="stylesheet" type="text/css" href="Home.css">
-                      
-            <img src="11.jpeg" alt="sayo" height="900" width="1695" >   
+            <div class="bg-image ">          
+            <img src="11.jpeg" alt="sayo" height="900" width="1695" >  
+        </div>
             <div class="logo">
             <img src="logo.png" alt="sayo"  height="160" width="150" >  
             </div>
