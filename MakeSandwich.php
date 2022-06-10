@@ -1,6 +1,7 @@
 <?php
 include "TopMenu.php";
 include "customdb.php";
+include="pre.php";
 ?>
 <html>
 
@@ -63,7 +64,9 @@ include "customdb.php";
                 <h2 class="h20">
                     PROTEIN 🥓
                 </h2>
-
+<div class="cart_div">
+<a href="cart.php" style="position:absolute; top:770px; left:300px; color:white; background-color:grey;"><img src="cart-icon.PNG"> Cart<span><?php echo $cart_count; ?></span></a>
+</div>      
                 <div class="grid">
 
                     <?php
