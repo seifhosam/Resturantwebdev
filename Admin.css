@@ -109,7 +109,7 @@ cursor: pointer;
     padding: 9px;
     border-radius: 8px;
     width: 350px;
-    height: 550px; 
+    height: 30px; 
     text-align: center; 
     cursor: pointer;
 
@@ -118,20 +118,14 @@ cursor: pointer;
     position: absolute;
     top: 200px;
     left: 50px;
-    text-align: center;
-
 }
 .clients{
     position: absolute;
     top: 200px;
     left: 650px;
-
-
 }
 .cacher{
-
     position: absolute;
     top: 200px;
     left: 1275px;
-
 }
