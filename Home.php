@@ -5,12 +5,12 @@ include "homeheader.php";
     <head>
             <meta charset="utf-8">
             <title>Home</title>
-            <link rel="stylesheet" type="text/css" href="Home.css">
-            <div class="bg-image ">          
-            <img src="11.jpeg" alt="sayo" height="900" width="1695" >  
-        </div>
+            <link rel="stylesheet" type="text/css" href="home.css">
+            <div class="bg-image ">     
+            <img src="11.jpeg" alt="sayo" height="900" width="1695" >   
+</div>
             <div class="logo">
-            <img src="logo.png" alt="sayo"  height="160" width="150" >  
+           <a href="Home.php" ><img src="logo.png" alt="alternate_text"  height="160" width="150" >  </a>
             </div>
             <div class="love">
             <p> We get what you love </p>
