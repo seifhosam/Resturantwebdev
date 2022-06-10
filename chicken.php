@@ -31,7 +31,7 @@ include "pre.php";
                   <a href="Salads.php" class="MenuVar Salads">   Salads   </a>                 
                   <a href="Dessert.php" class="MenuVar Dessert">   Dessert   </a>                     
                   <a href="Classics.php" class="MenuVar Classics">   Classics </a>                  
-                  <a href="Classics.php" class="MenuVar Mindsandwitch">   Mind Sandwitch </a>
+                  <a href="MakeSandwich.php" class="MenuVar Mindsandwitch">   Mind Sandwitch </a>
                   
                   <form class="example" action=" "> <!-- php el search --> 
                   <input type="text" placeholder="Search your plate..." name="search">
