@@ -6,7 +6,7 @@ include"connect.php";
 //cashier login 
 if(isset($_POST['login'])) {
 	$sql = mysqli_query($conn,
-	"SELECT * FROM cashier WHERE Name='"
+	"SELECT * FROM cashier WHERE Email='"
 	. $_POST["username"] . "' AND
 	password='" . $_POST["pwd"] . "' ");
 	$num = mysqli_num_rows($sql);
