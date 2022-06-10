@@ -116,8 +116,9 @@ while($row = mysqli_fetch_array($result))
 <label for="parent_menu">Parent</label>
 <input type="text" placeholder="Parent" name="parent_menu">
 
-<label for="image">Image path</label>
-<input type="text" placeholder="image path" name="image">
+
+<label for="image" >Image </label>
+<input type="file" placeholder="image path" name="image" >
 
 <label for="name">Name</label>
 <input type="text" placeholder="Name" name="name">
