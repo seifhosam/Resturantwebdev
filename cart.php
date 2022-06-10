@@ -1,3 +1,4 @@
+<html>
 <?php
 session_start();
 $status="";
@@ -23,97 +24,120 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
   	
 }
 ?>
-<html>
-<head>
-<title>Your Cart</title>
-<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-</head>
-<body>
-<div style="width:700px; margin:50 auto;">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" >
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<h2>Your Cart</h2>   
-<form action="checkout.php" style="margin:10px 230px" ><button style="color:red "><b>Check Out</b></button></form>
-<?php
-if(!empty($_SESSION["shopping_cart"])) {
-$cart_count = count(array_keys($_SESSION["shopping_cart"]));
-?>
-<div class="cart_div">
-<a href="cart.php">
-<img src="cart-icon.PNG" /> Cart
-<span><?php echo $cart_count; ?></span></a>
-</div>
-<?php
-}
+<div class="container">
+    <div class="row" >
+        <div style="background-color:rgb(22, 22, 22);"class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3" >
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6" style="color:orange;">
+                    <address>
+                        <strong>Grand Restaurant</strong>
+                        <br>
+                       
+                        <abbr title="Phone" style="color:orange;">P:</abbr> (213) 484-6829
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right"style="color:orange;">
+                    <p>
+                        <em><p id="demo"></p>
 
-?>
-
-<div class="cart">
-<?php
-if(isset($_SESSION["shopping_cart"])){
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script></em>
+                    </p>
+                    <p>
+                        <em style="color:orange;">Receipt #: 34522677W</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <?php
+            if(isset($_SESSION["shopping_cart"])){
     $total_Price = 0;
 ?>	
-<table class="table">
-<tbody>
-<tr>
-<td></td>
-<td>ITEM NAME</td>
-<td>QUANTITY</td>
-<td>UNIT PRICE</td>
-<td>ITEMS TOTAL</td>
-</tr>	
-<?php		
+                <div class="text-center" style="color:orange;">
+                    <h1>Receipt</h1>
+                </div>
+                </span>
+                <table class="table table-hover" style="color:orange;">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>QUANTITY</th>
+                            <th class="text-center">UNIT PRICE</th>
+                            <th class="text-center">ITEMS Total</th>
+                            <?php		
 foreach ($_SESSION["shopping_cart"] as $product){
 ?>
-<tr>
-<td><img src='<?php echo $product["image"]; ?>' width="50" height="40" /></td>
-<td><?php echo $product["name"]; ?><br />
-<form method='post' action=''>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           
+                        
+                            <td class="col-md-9" style="background-color:rgb(22, 22, 22);">
+                            <img src='<?php echo $product["image"]; ?>' width="50" height="40" /><em>
+                                <?php echo $product["name"]; ?></em></h4>
+                                <form method='post' action=''>
 <input type='hidden' name='ID' value="<?php echo $product["ID"]; ?>" />
 <input type='hidden' name='action' value="remove" />
-<button type='submit' class='remove' >Remove Item</button>
-</form>
-</td>
-<td>
-<form method='post' action=''>
+<button type='submit' class='remove' style="background-color:orange;">Remove Item</button>
+</form></td>
+                                
+                            <td  style="background-color:rgb(22, 22, 22);"class="col-md-1" style="text-align: center" > <form method='post' action=''>
 <input type='hidden' name='ID' value="<?php echo $product["ID"]; ?>" />
 <input type='hidden' name='action' value="change" />
-<select name='quantity' class='quantity' onchange="this.form.submit()">
+<select name='quantity' style="background-color:orange;" class='quantity' onchange="this.form.submit()">
 <option <?php if($product["quantity"]==1) echo "selected";?> value="1">1</option>
 <option <?php if($product["quantity"]==2) echo "selected";?> value="2">2</option>
 <option <?php if($product["quantity"]==3) echo "selected";?> value="3">3</option>
 <option <?php if($product["quantity"]==4) echo "selected";?> value="4">4</option>
 <option <?php if($product["quantity"]==5) echo "selected";?> value="5">5</option>
 </select>
-</form>
-</td>
-<td><?php echo "$".$product["Price"]; ?></td>
-<td><?php echo "$".$product["Price"]*$product["quantity"]; ?></td>
-</tr>
-<?php
+</form></td>
+                            <td class="col-md-1 text-center" style="background-color:rgb(22, 22, 22);"><?php echo "$".$product["Price"]; ?></td>
+                            <td class="col-md-1 text-center" style="background-color:rgb(22, 22, 22);"><?php echo "$".$product["Price"]*$product["quantity"]; ?></td>
+                        </tr>
+                        <?php
 $total_Price += ($product["Price"]*$product["quantity"]);
 }
 ?>
-<tr>
-<td colspan="5" align="right">
-<strong>TOTAL: <?php echo "$".$total_Price; ?></strong>
 
-</td>
-</tr>
-</tbody>
-</table>		
-  <?php
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td class="text-right" style="background-color:rgb(22, 22, 22);"><h4><strong>Total: </strong></h4></td>
+                            <td class="text-center text-danger"style="color:orange; background-color:rgb(22, 22, 22); " ><h4><strong> <?php echo "$".$total_Price; ?></strong></h4></td>
+                            <?php
 }else{
 	echo "<h3>Your cart is empty!</h3>";
 	}
 ?>
-</div>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-success btn-lg btn-block"  style="background-color:orange; color:rgb(22, 22, 22);">
+                    Pay Now  Using <span style="color:black;" class="glyphicon glyphicon-chevron-down">
+				</span>
+                </button>
+				<button class="btn btn-success btn-lg btn-block" style=" color:rgb(22, 22, 22);"onclick="window.location.href='editorder.php'">Cash</button>
+                <button class="btn btn-success btn-lg btn-block" style=" color:rgb(22, 22, 22); "onclick="window.location.href='checkout.php'">Visa</button>
+</td>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+    margin-top: 20px;
+	background-color: rgb(22, 22, 22);
+}
 
-<div style="clear:both;"></div>
-
-<div class="message_box" style="margin:10px 0px;">
-<?php echo $status; ?>
-</div>
-<br /><br />
-</div>
-</body>
+    </style>
+	<title>Receipt</title>
 </html>
