@@ -34,7 +34,7 @@ if(isset($_POST['login'])) {
 	$num = mysqli_num_rows($sql);
 	if($num > 0) {
 		$row = mysqli_fetch_array($sql);
-		header("location:contact_us.php");
+		header("location:cashiercart.php");
 		exit();
 	}
 }
