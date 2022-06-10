@@ -112,8 +112,8 @@ $total_Price += ($product["Price"]*$product["quantity"]);
                             <td>
 							<input type="radio" id="Delivery" name="fav_language" value="Delivery">
                             <label for="Delivery">Delivery</label>
-                           <input type="radio" id="Resturant" name="fav_language" value="Resturant">
-                           <label for="css">Resturant</label><br>
+                           <input type="radio" id="Resturant" name="fav_language" value="Restaurant">
+                           <label for="css">Restaurant</label><br>
 						</td>
                             <td>    </td>
                             <td class="text-right" style="background-color:rgb(22, 22, 22);"><h4><strong>Total: </strong></h4></td>
