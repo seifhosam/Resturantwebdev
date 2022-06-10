@@ -130,8 +130,8 @@ button{
 <option  value="2">Female  </option>
 </select>
 
-<label for="Select image" >Put the Path Of Image</label>
-<input type="text" name="image" >
+<label for="Select image" >Image</label>
+<input type="file" name="image" >
 
         <button>Submit</button> 
     </form>
