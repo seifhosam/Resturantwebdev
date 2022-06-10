@@ -109,8 +109,13 @@ $total_Price += ($product["Price"]*$product["quantity"]);
 ?>
 
                         <tr>
-                            <td>   </td>
-                            <td>   </td>
+                            <td>
+							<input type="radio" id="Delivery" name="fav_language" value="Delivery">
+                            <label for="Delivery">Delivery</label>
+                           <input type="radio" id="Resturant" name="fav_language" value="Resturant">
+                           <label for="css">Resturant</label><br>
+						</td>
+                            <td>    </td>
                             <td class="text-right" style="background-color:rgb(22, 22, 22);"><h4><strong>Total: </strong></h4></td>
                             <td class="text-center text-danger"style="color:orange; background-color:rgb(22, 22, 22); " ><h4><strong> <?php echo "$".$total_Price; ?></strong></h4></td>
                             <?php
