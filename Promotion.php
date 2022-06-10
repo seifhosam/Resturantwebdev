@@ -118,7 +118,12 @@ font-weight: 700;
 border-radius: 8px;
 cursor: pointer;
 }
+h1{
+	color:white;
+	 text-align: center;
+}
 </style>
+	<h1>Promote cashier</h1>
 </head>
 <body>
 <table class="table ">
