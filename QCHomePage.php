@@ -5,9 +5,13 @@ include "Menu.php";
 
 <html>
 <head>
-
-
-
+	
+<style>
+body {
+  background-color:rgb(22,22,22) ;
+}
+</style>
+	
 </head>
 <body>
 	
@@ -17,7 +21,7 @@ include "Menu.php";
 <style>
 
 h1{
-	color:red;
+	color:white;
 }
 
 </style>
