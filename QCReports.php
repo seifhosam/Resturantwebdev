@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "projectqc";
-session_start();
+//session_start();
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
