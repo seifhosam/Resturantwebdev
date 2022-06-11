@@ -128,9 +128,9 @@ cursor: pointer;
 h1{
 	color:white;
 	 text-align: center;
-}
+}	
 </style>
-<h1>Add new cashier</h1>	
+<h1>Add new cashier</h1>
 </head>
 <body>
 <table class="table ">
@@ -153,13 +153,13 @@ h1{
 <input type="text" placeholder="ID" name="ID" id="ID">
 
 <label for="Name">Name</label>
-<input type="text" placeholder="Name" name="Name" id=">
+<input type="text" placeholder="Name" name="Name" id="Name">
 
-<label for="Status">status</label>
-<input type="text" placeholder="status" name="Status" id="Status" >
+<label for="Status">Status</label>
+<input type="text" placeholder="status" name="Status" id="Status">
 
 <label for="Account">Account</label>
-<input type="text" placeholder="status" name="Account" id="Account" value="enabled">
+<input type="text" placeholder="Account" name="Account" id="Account" value="enabled">
 
 <button type="submit"name="Add" id="Add">Add</button>
 
