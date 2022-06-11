@@ -2,8 +2,8 @@
 <head>  
    <div class="topnav">
   <a href="QCHomePage.php">QC-Home</a>
-  <a  href="#news">View Comments</a>
-  <a  href="#contact">Veiw Reports</a>
+  <a  href="QCViewComments.php">View Comments</a>
+  <a  href="QCReports.php">Veiw Reports</a>
   <a href="Promotion.php">Promotions</a>
   <a  href="addnewcashier.php">Add New Cashier </a>
 </div>
