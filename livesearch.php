@@ -37,13 +37,15 @@ if (isset($_POST['input'])) {
                     $id = $row['ID'];
                     $Category = $row['parent_menu'];
                     $Name = $row['name'];
-                    $Description = $row['description'];
                     $Price = $row['Price'];
+                    $image = $row['image'];
                 ?>
-  
                         <tr>
                             <td>
                                 <h3><?php echo $id; ?></h3>
+                            </td>
+                            <td>
+                                <h3><?php echo $image; ?></h3>
                             </td>
                             <td>
                                 <h3><?php echo $Category; ?></h3>
@@ -54,7 +56,7 @@ if (isset($_POST['input'])) {
                             <td>
                                 <h3><?php echo $Price; ?></h3>
                             </td>
-
+                           
                         </tr>
                     </div>
                     </div>
