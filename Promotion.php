@@ -58,6 +58,10 @@ border: 2px solid rgb(196, 196, 196);
 color:rgb(196, 196, 196);
 font-weight: 900;
 }
+/*hover effect on table row*/
+tr:hover {
+	background-color: orange;
+	}
 /* box el edit */
 #background2{
 transform: translate(-90%,-90%);
@@ -123,7 +127,7 @@ h1{
 	 text-align: center;
 }
 </style>
-	<h1>Promote cashier</h1>
+<h1>Promote cashier</h1>
 </head>
 <body>
 <table class="table ">
@@ -168,4 +172,3 @@ while($row = mysqli_fetch_array($result))
  
 }
 ?>
-	
