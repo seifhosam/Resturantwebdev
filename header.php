@@ -8,6 +8,7 @@
                 <a href="">About</a>
                 <a href="#">Menu</a>
                 <a href="contact_us.php">Contact Us</a>
+               <a href="logout.php" name="logout">Logout</a>
             </nav>
         </div>
     </div> 
