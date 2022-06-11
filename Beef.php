@@ -33,10 +33,12 @@ include "pre.php";
                   <a href="Classics.php" class="MenuVar Classics">   Classics </a>                  
                   <a href="MakeSandwich.php" class="MenuVar Mindsandwitch">   Mind Sandwitch </a>
                   
-                  <form class="example" action=" "> <!-- php el search --> 
-                  <input type="text" placeholder="Search your plate..." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
+ <div class="dropdown">
+  <div id="myDropdown" class="dropdown-content">
+        <input type="text" class="form-control" id="searchid" placeholder="Search for plates...." onkeyup="filterFunction()" >
+
+        <div id="searchresult"> </div>
+    </div>
 
                 <!-- MEAT --> 
                 <h10><b>Beef 🥩</b></h10>   
