@@ -1,6 +1,6 @@
 <?php
 include "Menu.php";
-session_start();
+//session_start();
 ?>
 
 <html>
