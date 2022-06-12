@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include "header.php"?>
+<?php include "homeheader.php"?>
 <?php
 error_reporting(E_ERROR | E_PARSE);//remove warning msg
 include("connect.php");
