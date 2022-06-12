@@ -5,6 +5,7 @@
 error_reporting(E_ERROR | E_PARSE);//remove warning msg
 include("connect.php");
 
+//user login
 if(isset($_POST['login'])) {
 	$sql = mysqli_query($conn,
 	"SELECT * FROM registeration WHERE Email='"
@@ -17,6 +18,7 @@ if(isset($_POST['login'])) {
 		exit();
 	}
 }
+	//admin login
 	if(isset($_POST['login'])){
 	$sql = mysqli_query($conn,"SELECT * FROM admin WHERE Email='". $_POST["username"] . "' AND password='" . $_POST["pwd"] . "' ");
 	$num = mysqli_num_rows($sql);
@@ -38,6 +40,20 @@ if(isset($_POST['login'])) {
 		exit();
 	}
 }
+	
+
+//quality control login
+if(isset($_POST['login'])) {
+	$sql = mysqli_query($conn,
+	"SELECT * FROM qualitycontrol WHERE Email='". $_POST["username"] . "' ANDpassword='" . $_POST["pwd"] . "' ");
+	$num = mysqli_num_rows($sql);
+	if($num > 0) {
+		$row = mysqli_fetch_array($sql);
+		header("location:QCHomePage.php");
+		exit();
+	}
+}
+
 ?>
 <head>
 <style>
